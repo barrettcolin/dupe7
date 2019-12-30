@@ -1,4 +1,4 @@
-require 'RMagick'
+require 'rmagick'
 include Magick
 
 alpha = Image.new(16, 16) {

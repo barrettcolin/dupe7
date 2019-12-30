@@ -1,4 +1,4 @@
-require 'RMagick'
+require 'rmagick'
 include Magick
 
 color = Image.new(128, 128) {

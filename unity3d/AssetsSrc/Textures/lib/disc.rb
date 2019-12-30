@@ -5,7 +5,7 @@ def number_color(size, number, color_str)
     text_draw = Magick::Draw.new() {
         self.fill = 'white'
         self.gravity = Magick::CenterGravity
-        self.font_family = "Arial"
+        self.font_family = "Arial Black"
         self.font_weight = 900
         self.pointsize = size * 6 / 7
     }

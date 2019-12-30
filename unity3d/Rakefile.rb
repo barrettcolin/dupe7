@@ -14,7 +14,7 @@ task :default do
         target = 'Assets/' + asset
         unless uptodate?(target, Dir.glob(lib + '/lib/*.rb') + [src])
             puts target
-            system("ruby -rubygems -I#{lib} #{src} -- #{target}")
+            system("ruby -rrubygems -I#{lib} #{src} -- #{target}")
         end
     end
 end
