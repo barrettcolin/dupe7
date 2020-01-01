@@ -54,7 +54,7 @@ def number_color(size, number, color_str)
 end
 
 def open_disc_alpha(size)
-    scale = size / 42
+    scale = size / 42.0
     
     disc_alpha = Magick::Image.new(size, size) {
         self.image_type = Magick::GrayscaleType
@@ -72,7 +72,7 @@ def open_disc_alpha(size)
 end
 
 def closed_disc_alpha(size, cracked)
-    scale = size / 42
+    scale = size / 42.0
     
     disc_alpha = Magick::Image.new(size, size) {
         self.image_type = Magick::GrayscaleType
